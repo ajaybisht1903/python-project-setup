@@ -40,6 +40,7 @@ bash>
 3. Activate the Virtual Environment
 bash>
     .\venv\Scripts\Activate
+
 You’ll know it's activated when you see (venv) before your path in PowerShell.
 
 4. Install Required Libraries
