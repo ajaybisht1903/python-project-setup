@@ -24,8 +24,7 @@ Open PowerShell as your default terminal
 🚀 Steps to Start a Clean Python Project
 1. Create a Project Folder
 bash>
-    mkdir MyAwesomeProject
-    cd MyAwesomeProject
+    mkdir "D:\Projects\MyAwesomeProject"; cd "D:\Projects\MyAwesomeProject"
 
 2. Create a Virtual Environment (venv)
 bash>
