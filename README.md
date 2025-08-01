@@ -47,6 +47,7 @@ bash>
         2) Run >  Set-ExecutionPolicy RemoteSigned
         3) You will be prompted to confirm the change. Type Y and press Enter.
         4) After this bash .\venv\Scripts\Activate on VS terminal
+
 > Temporary Execution Policy Change: If you prefer not to change the execution policy permanently, you can temporarily change it for the current session:
    >  PowerShell -ExecutionPolicy Bypass -File .\venv\Scripts\Activate
 
