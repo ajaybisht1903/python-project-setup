@@ -41,7 +41,14 @@ bash>
 bash>
     .\venv\Scripts\Activate
 
-You’ll know it's activated when you see (venv) before your path in PowerShell.
+> You’ll know it's activated when you see (venv) before your path in PowerShell.
+   > Sometimes you will get error while activating venv
+        1) Open PowerShell as Administrator
+        2) Run >  Set-ExecutionPolicy RemoteSigned
+        3) You will be prompted to confirm the change. Type Y and press Enter.
+        4) After this bash .\venv\Scripts\Activate on VS terminal
+> Temporary Execution Policy Change: If you prefer not to change the execution policy permanently, you can temporarily change it for the current session:
+   >  PowerShell -ExecutionPolicy Bypass -File .\venv\Scripts\Activate
 
 4. Install Required Libraries
 bash>
@@ -63,13 +70,13 @@ bash>
 7. Clean Up Unwanted Files (Optional)
 To remove __pycache__, .pyc, or old venvs:
 
-# Delete virtual environment
+✅ Delete virtual environment
 Remove-Item -Recurse -Force .\venv
 
-# Remove __pycache__ folders
+✅ Remove __pycache__ folders
 Get-ChildItem -Recurse -Directory -Filter "__pycache__" | Remove-Item -Recurse -Force
 
-# Delete .pyc files
+✅ Delete .pyc files
 Get-ChildItem -Recurse -Include *.pyc | Remove-Item -Force
 
 💡 Tips and Best Practices
@@ -79,7 +86,7 @@ Get-ChildItem -Recurse -Include *.pyc | Remove-Item -Force
 
 > Exclude venv and __pycache__ in .gitignore.
 
-8. Sample of .gitignore
+✅ Sample of .gitignore
     venv/
     __pycache__/
     *.pyc
